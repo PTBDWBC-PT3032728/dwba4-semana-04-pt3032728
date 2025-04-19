@@ -1,78 +1,79 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-        <title> dwba4-semana-04-pt3032728 </title>
+        <meta charset="UTF-8" /> <!-- configura a codificação de caracteres do navegador para o UTF-8-->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />  <!-- Adiciona o ícone de aba de navegador-->
+        <title> HOME - IFSP-PTB - DWBA4 </title> <!-- Adiciona o título na aba do navegador-->
     </head>
 
     <body>
-        <header id="topo">
-            <div class="cabecalho1">
-                <p style="text-align: right;"> 
-                    <a href='index.html'> HOME </a> <strong>|</strong>
-                    <a href='contato.html'> CONTATO </a> <strong>|</strong> 
-                    <a href='sobre.html'> SOBRE </a>   
-                </p>
+        <header id="cabecalho"> <!-- Indica o cabeçalho do nosso documento-->
+            <nav> 
+                <object width="100%" height="65px" data="menu.html"></object> <!--Traz o html menu como parte da página-->
+            </nav>
+
+            <!-- Logo -->
+            <img src="images/Logo.jpg" width="300px" alt="Logo IFSP Pirituba" /><br /> <!--Anexa imagem e texto alternativo-->
+
+            <!-- Lista de cursos -->
+            <div class="cursos">
+                <nav> <!-- Indica que o conteúdo é composto de links de navegação-->
+                    <h3>Cursos</h3>
+                    <ul> <!-- Estrutura de lista não ordenada -->
+                        <li> <a href="ads.html"> Análise e Desenvolvimento de Sistemas </a> </li> <!-- Item de lista -->
+                        <li> <a href="#"> Engenharia de Produção </a> </li>
+                        <li> <a href="#"> Gestão em Tecnologia da Informação </a> </li>
+                        <li> <a href="#"> Letras </a> </li>
+                        <li> <a href="#"> Gestão Pública </a> </li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
-        <!-- Logo -->
-        <div class="logo">
-            <img src="images/Logo.jpg" width="300px" /> <br />
-        </div>
-
-        <!-- Lista de cursos -->
-        <div class="cursos">
-            <h3> Cursos </h3>
-            <p>
-                <ul>
-                    <li> <a href="ads.html"> Análise e Desenvolvimento de Sistemas </a> </li>
-                    <li> <a href="engprod.html"> Engenharia de Produção </a> </li>
-                    <li> <a href="gti.html"> Gestão em Tecnologia da Informação </a> </li>
-                    <li> <a href="letras.html"> Letras </a> </li>
-                    <li> <a href="gpub.html"> Gestão Pública </a> </li>
-                </ul>
-            </p>
-        </div>
-
+        <main> <!-- indica que é o conteúdo principal dessa página -->
+        
         <!-- Eventos -->
-        <div class="eventos">
-            <h3> Eventos </h3>
-            <figure>
-                <img src="images/SEJA_RARO.jpg" width='400px' />
-                <figcaption> Aniversário do IFSP - Pirituba - Palestra Augusto Aielo </figcaption>
-            </figure>
-        </div>
+        <aside> <!-- indica que é um conteúdo a parte do princial, auxiliar-->
+            <div class="eventos">
+                <h3>Eventos</h3>
+                <figure>
+                    <img src="images/SEJA_RARO.jpg" width='400px' />
+                    <figcaption>Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</figcaption>
+                </figure>
+            </div>
+        </aside>
 
         <!-- Biblioteca -->
-        <div class="biblioteca"> 
-            <h2> Sobre a Biblioteca </h2>
-            <img src='images/library.jpeg' width='100px' /> <br />
+        <section>
+            <div class="biblioteca"> 
+                <h1> Sobre a Biblioteca </h1>
+                <article> <!-- Indica que o conteúdo é completo, ou seja, não depende de outros trechos do documento para ter significado -->
+                    <img src='images/library.jpeg' width='100px' alt="Biblioteca"/> <br />
 
-            <h2> Conheça os novos títulos disponíveis na nossa biblioteca </h2>
-            <h6> Publicado: Quarta-feira, 14 de agosto de 2019 </h6>
-        </div>
+                    <h2> Conheça os novos títulos disponíveis na nossa biblioteca </h2>
+                    <h6> Publicado: Quarta-feira, 14 de agosto de 2019 </h6> <!-- Título de terceiro nível -->
+                </article>
+            </div>
+        </section>
 
         <!-- SUAP -->
-        <div class="suap">
-            <h2>Conheça o SUAP</h2>
-            <iframe width="500" height="280" src="https://www.youtube.com/embed/yVbOcB1ryh0"
-                title="Tutorial de Acesso - SUAP 1" frameborder="1" 
-                allowfullscreen>
-            </iframe>
-        </div> <br />
+        <section>
+            <div class="suap">
+                <h2>Conheça o SUAP</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yVbOcB1ryh0" frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div> 
+        </section>
+        </main>
 
         <!-- Rodapé -->
-        <br /><footer>
-            <div class="rodape">
-                <a href='#topo'>
-                <img src='images/MoveTop.png' width='35px' alt='Voltar para o topo'></a>|
-                <a href='https://www.facebook.com/ifsppirituba' target='_blank'>
-                    <img src='images/facebook.png' width='35px' alt='Facebook IFSP Pirituba'>
-                </a>
-                <p> IFSP - Câmpus Pirituba - AV. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p>
+        <footer>
+            <div class="rodape" align="left">
+                <a href='#cabecalho'><img src='images/MoveTop.png' width='35px' alt='Voltar para o topo'></a>|
+                <a href='https://www.facebook.com/ifsppirituba' target='_blank'><img src='images/facebook.png' width='35px' alt='Facebook IFSP Pirituba'></a>
+            <!-- target='_blank' serve para abrir o link numa nova guia-->
             </div>
+                <p> IFSP - Câmpus Pirituba - AV. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p>
         </footer>
     </body>
 </html>
